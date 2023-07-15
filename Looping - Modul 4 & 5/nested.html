@@ -1,0 +1,41 @@
+<!-- Pada perulangan berikut menggunakan dua for 
+- Perulangan pertama menggunakan variabel i sebagai counter 
+- Perulangan kedua menggunakan variabel j sebagai counter. -->
+
+<script>
+    // fungsinya untuk membuat perulangan
+    for(let i = 0; i < 10; i++){
+        // fungsinya untuk membuat perulangan
+        for(let j = 0; j < 10; j++){
+            // fungsinya untuk menampilkan output ke browser
+            document.write("<p>Perulangan ke-" + i + " dan ke-" + j + "</p>");
+            // hasil diatas adalah perulangan yang bersarang atau nested loop 
+            // yang artinya perulangan didalam perulangan
+            // hasil pada browser akan menampilkan perulangan ke-0 dan ke-0 sampai ke-9 dan ke-9
+        }
+    }
+</script>
+
+<!-- Contoh lainnya: -->
+
+<script>
+    // konfirmasi untuk mengulangi perulangan
+    var ulangi = confirm("Apakah anda mau mengulangi?");
+    // membuat variabel counter
+    // variabel counter ini untuk menghitung berapa kali perulangan dilakukan
+    var counter = 0;
+
+    while(ulangi) {
+        // counter akan di increment
+        // increment adalah menambahkan nilai variabel dengan 1
+        counter++;
+        // menampilkan output ke browser
+        var binatang = "*". repeat(counter) + "<br>";
+        // kondisi untuk menghentikan perulangan
+        document.write(counter + ": " + binatang);
+        // konfirmasi untuk mengulangi perulangan
+        ulangi = confirm("Apakah anda mau mengulangi?");
+        // hasil pada browser akan menampilkan perulangan ke-1 dan ke-2 dan seterusnya
+    }
+</script>
+

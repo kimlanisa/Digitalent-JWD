@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek Javascript</title>
+</head>
+<body>
+    <script>
+        // membuat objek
+        var person = {
+            firstName: "Kim",
+            lastName: "Lanisa",
+            // membuat method
+            showName: function(){
+                // this mengacu pada objek person
+                alert(`Nama: ${this.firstName} ${this.lastName}`)
+            }
+        };
+
+        // memanggil method
+        person.showName();
+        // hasil pada browser adalah Nama: Kim Lanisa
+    </script>
+    
+</body>
+</html>

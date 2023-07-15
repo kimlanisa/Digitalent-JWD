@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan if/else/if</title>
+</head>
+<body>
+    <script>
+        // var adalah keyword untuk membuat variabel
+        // nama variabelnya adalah nilai
+        // prompt adalah fungsi untuk membuat inputan
+        // inputan akan disimpan di variabel nilai
+        var nilai = prompt("Inputkan nilai akhir: ");
+        // variabel ini akan digunakan untuk menyimpan grade dari nilai
+        var grade = "";
+
+        // membuat percabangan if/else if
+        // percabangan ini akan mengecek nilai yang diinputkan
+        // dan akan menentukan grade dari nilai tersebut
+        if(nilai >= 90) grade = "A"
+        else if(nilai>=80) grade = "B+"
+        else if(nilai>=70) grade = "B"
+        else if(nilai>=60) grade = "C+"
+        else if(nilai>=50) grade = "C"
+        else if(nilai>=40) grade = "D"
+        else if(nilai>=30) grade = "E"
+        else grade = "F";
+
+        // menampilkan grade dari nilai yang diinputkan
+        document.write(`<p>Nilai anda: ${grade}</p>`);
+    </script>
+</body>
+</html>

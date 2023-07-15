@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Ternary</title>
+</head>
+<body>
+    <script>
+        // membuat prompt dan mengubahnya menjadi huruf besar
+        var jwb = prompt("Apakah Jakarta ibu kota Indonesia? (Iya/Tidak)");
+
+        // membuat percabangan ternary
+        // ternary adalah sebuah fungsi yang akan mengeksekusi sebuah perintah jika kondisi yang ditentukan terpenuhi
+        var jawaban = (jwb.toUpperCase() == "IYA") ? "Benar" : "Salah";
+
+        // menampilkan jawaban
+        document.write(`<p>Jawaban anda: ${jawaban}</p>`);
+        // hasil dari percabangan ternary di atas adalah:
+        // jika jwb.toUpperCase() == "IYA" bernilai true, maka variabel jawaban akan berisi "Benar"
+        // jika jwb.toUpperCase() == "IYA" bernilai false, maka variabel jawaban akan berisi "Salah"
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array dan Perulangan</title>
+</head>
+<body>
+    <script>
+        // membuat array
+        var laptop = ["Asus", "Acer", "Lenovo", "HP", "Dell"];
+
+        // mengambil data dari array
+        document.write("<h3>Daftar Laptop:</h3>");
+
+        // membuat list
+        document.write("<ol>");
+        
+        // menggunakan perulangan untuk mencetak semua isi array
+        for(var i = 0; i < laptop.length; i++){
+            document.write("<li>" + laptop[i] + "</li>");
+            // laptop[i] artinya mengambil data dari array laptop pada index ke-i
+        }
+        // menutup list
+        document.write("</ol>");
+
+        // hasil pada breowser akan seperti ini:
+        // Daftar Laptop:
+        // 1. Asus
+        // 2. Acer
+        // 3. Lenovo
+        // 4. HP
+        // 5. Dell
+    </script>
+    
+</body>
+</html>

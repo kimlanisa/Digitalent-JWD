@@ -1,0 +1,24 @@
+<script>
+    // membuat array kosong untuk menampung data dari prompt
+    var ulangi = confirm("Apakah anda mau mengulangi?");
+    // membuat method untuk menampung data dari prompt
+    // method adalah sebuah fungsi yang berada didalam objek
+    // method ini akan menampilkan kotak dialog
+    var counter = 0;
+
+    // while adalah perulangan yang akan dijalankan jika kondisi bernilai true
+    while(ulangi){
+        // counter adalah variabel yang akan di increment
+        var jawab = confirm("Apakah anda mau mengulangi?");
+        // jika user tidak mau mengulangi maka ulangi akan bernilai false
+        counter++;
+        // while akan berhenti jika ulangi bernilai false
+        if(jawab == false){
+            // menghentikan perulangan
+            ulangi = false;
+        }
+    }
+    // memanggil method
+    document.write("Perulangan sudah dilakukan sebanyak ${counter} kali");
+    // hasil pada browser akan menampilkan perulangan ke-1 dan ke-2 dan seterusnya
+</script>

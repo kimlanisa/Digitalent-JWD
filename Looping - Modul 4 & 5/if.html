@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan If</title>
+</head>
+<body>
+    <script>
+        // membuat prompt
+        // prompt adalah sebuah fungsi yang akan menampilkan sebuah kotak dialog
+        var totalBelanja = prompt("totalBelanja?", 0);
+
+        // membuat percabangan if
+        // if adalah sebuah fungsi yang akan mengeksekusi sebuah perintah jika kondisi yang ditentukan terpenuhi
+        // jika kondisi tidak terpenuhi, maka perintah tidak akan dijalankan
+        if (totalBelanja > 100000) {
+            // artinya jika totalBelanja lebih besar dari 100000, maka perintah di dalam kurung kurawal akan dijalankan
+            // menampilkan pesan alert
+            alert("Selamat anda mendapatkan hadiah!");
+        }
+
+        // jika kondisi tidak terpenuhi, maka perintah di dalam kurung kurawal tidak akan dijalankan
+        // sehingga menampilkan pesan alert ini
+        document.write("Terima kasih sudah berbelanja");
+
+    </script>
+    
+</body>
+</html>

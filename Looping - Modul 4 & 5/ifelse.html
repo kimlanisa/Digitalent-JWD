@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan If Else</title>
+</head>
+<body>
+    <script>
+        // membuat prompt
+        // prompt akan mengembalikan nilai string
+        // string adalah teks yang diapit oleh tanda petik
+        var password = prompt("Masukkan password anda: ");
+
+        // membuat percabangan
+        // if else adalah sebuah fungsi yang akan mengeksekusi sebuah perintah jika kondisi yang ditentukan terpenuhi
+        // jika user memasukkan password dengan benar, maka perintah yang ada di dalam if akan dijalankan
+        if(password == "12345"){
+            // menampilkan pesan alert jika password benar
+            document.write("<p>Password anda benar</p>");
+        // jika kondisi tidak terpenuhi, maka perintah yang ada di dalam else akan dijalankan
+        }else{
+            // menampilkan pesan alert jika password salah
+            document.write("<p>Password anda salah</p>");
+        }
+
+        // menampilkan pesan alert ini setelah perintah di dalam if atau else selesai dijalankan
+        document.write("<p>Terima kasih</p>");
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<script>
+    // membuat objek
+    var ulangi = confirm("Apakah anda mau mengulangi?");
+    // membuat method
+    var counter = 0;
+
+    // do adalah perulangan yang akan dijalankan minimal satu kali
+    do {
+    // counter adalah variabel yang akan di increment
+        counter++;
+        // var jawab ini buat ngecek apakah user mau mengulangi atau tidak
+        var jawab = confirm("Apakah anda mau mengulangi?");       
+        // jika user tidak mau mengulangi maka ulangi akan bernilai false
+        // while adalah perulangan yang akan dijalankan jika kondisi bernilai true 
+    } while (ulangi);
+        // while akan berhenti jika ulangi bernilai false
+
+    // memanggil method
+    document.write("Perulangan sudah dilakukan sebanyak ${counter} kali");
+
+    // hasil pada browser: Perulangan sudah dilakukan sebanyak 1 kali
+</script>

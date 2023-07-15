@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Switch/Case</title>
+</head>
+<body>
+    <script>
+
+        // membuat prompt untuk memasukan angka
+        var jawab = prompt("Kamu beruntung! Silahkan pilih hadiahmu dengan memasukan angka 1 sampai 5");
+        // membuat variabel untuk menampung hadiah
+        var hadiah = "";
+
+        // membuat percabangan switch
+        // percabangan switch ini akan mengecek angka yang diinputkan dan akan menentukan hadiah berdasarkan angka yang diinputkan
+        switch(jawab){
+            // jika angka yang diinputkan adalah 1, maka hadiahnya adalah CPU
+            case "1":
+                hadiah = "CPU";
+                // break adalah keyword untuk menghentikan percabangan
+                break;
+            case "2":
+                hadiah = "Motherboard";
+                break;
+            case "3":
+                hadiah = "Mouse";
+                break;
+            case "4":
+                hadiah = "Monitor";
+                break;
+            case "5":
+                hadiah = "Mechanical Keyboard";
+                break;
+            default:
+                hadiah = "Tidak ada hadiah";
+                break;
+        }
+
+        // menampilkan hadiah yang didapatkan
+        document.write(`<p>Hadiah yang kamu dapatkan adalah: ${hadiah}</p>`);
+
+    </script>
+</body>
+</html>

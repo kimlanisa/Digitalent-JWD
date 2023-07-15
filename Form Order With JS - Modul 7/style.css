@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-brown {
+    background-color: #835545;
+    color: #ffffff;
+}
+
+.btn-brown:hover {
+    background-color: #6a4537;
+    color: #ffffff;
+}
+
+.btn-brown:focus {
+    background-color: #6a4537;
+    color: #ffffff;
+}
+
+.btn-brown:active {
+    background-color: #6a4537;
+    color: #ffffff;
+}
+
+.btn-outline-brown {
+    border-color: #835545;
+    color: #835545;
+}
+
+
+
+.image-left {
+    order: 1;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+
+.card {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+/* Hide scrollbar in Firefox */
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Customize scrollbar style */
+.card-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
