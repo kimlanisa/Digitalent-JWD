@@ -1,6 +1,4 @@
-function calculate(event) {
-  event.preventDefault();
-
+function calculate() {
   const angka1 = document.getElementById("angka1").value;
   const operator = document.getElementById("operator").value;
   const angka2 = document.getElementById("angka2").value;
@@ -10,22 +8,14 @@ function calculate(event) {
     return;
   }
 
-  const hasil = calculateResult(parseInt(angka1), operator, parseInt(angka2));
-
-  document.getElementById("hasil").value = hasil;
-}
-
-function calculateResult(angka1, operator, angka2) {
-  switch (operator) {
-    case "+":
-      return angka1 + angka2;
-    case "-":
-      return angka1 - angka2;
-    case "*":
-      return angka1 * angka2;
-    case "/":
-      return angka1 / angka2;
-    default:
-      return "Operator tidak valid";
-  }
+  // AJAX Request to PHP
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "calculate.php", true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      document.getElementById("hasil").value = xhr.responseText;
+    }
+  };
+  xhr.send(`angka1=${angka1}&operator=${operator}&angka2=${angka2}`);
 }
