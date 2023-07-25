@@ -1,0 +1,46 @@
+body {
+    background-color: #f6f6f1;
+    font-family: "Manrope", sans-serif;
+    
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+.tc-pink {
+    color: #fa7b6a;
+}
+
+.btn {
+    border-radius: 5;
+}
+
+.btn-pink {
+    background-color: #fa7b6a;
+}
+
+.btn-hover {
+    background-color: #fa7b6a;
+    color: #ffffff;
+}
+
+.btn-pink:hover {
+    background-color: #fa7b6a;
+    color: #ffffff;
+}
+
+.btn-pink:focus {
+    background-color: #fa7b6a;
+    color: #ffffff;
+}
+
+.btn-pink:active {
+    background-color: #fa7b6a;
+    color: #ffffff;
+}
+
+.btn-outline-pink {
+    border-color: #fa7b6a;
+    color: #fa7b6a;
+}
