@@ -146,7 +146,6 @@
                 });
             }
 
-
             function showConfirmation() {
                 Swal.fire({
                     title: 'Are you sure?',

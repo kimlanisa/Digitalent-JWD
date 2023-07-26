@@ -19,15 +19,18 @@ function getBooks()
 function addBook()
 {
     global $conn;
-    $title = $_POST["title"];
-    $author = $_POST["author"];
-    $publication = $_POST["publication"];
-    $isbn = $_POST["isbn"];
+
+    $data = json_decode(file_get_contents('php://input'), true);
+
+    $title = $data["title"];
+    $author = $data["author"];
+    $publication = $data["publication"];
+    $isbn = $data["isbn"];
 
     $query = "INSERT INTO Book (title, author, publication, ISBN) VALUES ('$title', '$author', '$publication', '$isbn')";
 
     if (mysqli_query($conn, $query)) {
-        if (isset($_POST['from_ajax']) && $_POST['from_ajax'] === 'true') {
+        if (isset($data['from_ajax']) && $data['from_ajax'] === 'true') {
             http_response_code(201);
             echo json_encode(array("message" => "Success!"));
         } else {
@@ -37,7 +40,10 @@ function addBook()
     } else {
         echo "Error: " . $query . "<br>" . mysqli_error($conn);
     }
+
+    addBook();
 }
+
 
 function updateBook()
 {
